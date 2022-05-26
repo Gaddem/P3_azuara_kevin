@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Gaddem/P3_azuara_kevin/issues"
   },
-  "homepage": "https://github.com/Gaddem/P3_azuara_kevin#readme"
+  "homepage": "https://github.com/Gaddem/P3_azuara_kevin#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
 }
