@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+.lign-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.div-logo {
+  display: flex;
+  justify-content: center;
+  -webkit-box-shadow: 5px 5px 12px 5px grey;
+  box-shadow: 5px 5px 12px 5px black;
+  z-index: 10;
+  overflow: visible;
+}
+.div-logo img {
+  object-fit: contain;
+  width: 50%;
+  padding: 20px 0 20px 0;
+}
+
+.div-location {
+  background-color: #EAEAEA;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  -webkit-box-shadow: 10px 0px 0px 0px black;
+  box-shadow: 10px 0px 0px 0px black;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 14px 0 14px 0;
+}
+.div-location img {
+  width: 16px;
+  height: 16px;
+}
+.div-location p {
+  margin: 0 0 0 20px;
+  color: #353535;
+}
+
+.restaurants {
+  padding: 20px 4% 20px 4%;
+  background-color: #F6F6F6;
+}
+.restaurants h2 {
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.restaurants .liste-restaurants {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.restaurants .liste-restaurants .card-resto {
+  width: 100%;
+  background-color: white;
+  border-radius: 13px;
+  height: 250px;
+  position: relative;
+}
+.restaurants .liste-restaurants .card-resto img {
+  height: 73%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+.restaurants .liste-restaurants .card-resto .etiquette-new {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background-color: #99E2D0;
+  padding: 5px 10px 5px 10px;
+  color: #119172;
+  border-radius: 4px;
+  right: 17px;
+  top: 17px;
+}
+.restaurants .liste-restaurants .card-resto .etiquette-new P {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+}
+.restaurants .liste-restaurants .card-resto .below-img-card {
+  height: 27%;
+  display: flex;
+  flex-direction: row;
+}
+.restaurants .liste-restaurants .card-resto .below-img-card .text-place {
+  width: 75%;
+}
+.restaurants .liste-restaurants .card-resto .below-img-card .text-place p {
+  margin: 0px;
+  padding: 0;
+  padding: 1% 0 0 5%;
+}
+.restaurants .liste-restaurants .card-resto .below-img-card .text-place h4 {
+  padding: 2% 0 0 5%;
+}
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place {
+  width: 25%;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 100%;
+  position: relative;
+  background-color: #353535;
+  padding: 20px 4% 20px 4%;
+  margin: 0;
+  font-weight: 500;
+}
+footer .logo-footer {
+  object-fit: contain;
+  width: 110px;
+  margin: 10px 0 10px 0;
+}
+footer .icone-footer {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+footer p {
+  padding: 5px 0 5px 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

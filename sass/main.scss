@@ -1,7 +1,173 @@
-footer {
+// général
+$greyDark : #353535;
+$greyLight :#F6F6F6;
+$deadGreen :#99E2D0;
+$generalPad : 20px 4% 20px 4%;
+$sizeRadiusCard : 13px;
+
+body{
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+
+
+.lign-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+// headerpage
+.div-logo{
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 5px 5px 12px 5px grey; 
+    box-shadow: 5px 5px 12px 5px black;
     img{
-        width:50px;
+        object-fit: contain;
+        width: 50%;
+        padding: 20px 0 20px 0;
+    }
+    z-index: 10;
+    overflow: visible;
+}
+.div-location{
+    background-color: #EAEAEA;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    -webkit-box-shadow: 10px 0px 0px 0px black; 
+    box-shadow: 10px 0px 0px 0px black;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    padding:14px 0 14px 0;
+    img{
+        width: 16px;
+        height: 16px;
+        // padding-right: 20px;
+    }
+    p{
+        margin: 0 0 0 20px;
+        color: $greyDark;
+    }
+}
+
+
+//mainpage
+
+.restaurants{
+    padding:$generalPad;
+    background-color: $greyLight;
+    h2{
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .liste-restaurants{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        .card-resto{
+            width: 100%;
+            background-color:white;
+            border-radius: $sizeRadiusCard;
+            height: 250px;
+            position: relative;
+            img{
+                height: 73%;
+                width: 100%;
+                object-fit: cover;
+                border-top-left-radius: $sizeRadiusCard;
+                border-top-right-radius: $sizeRadiusCard;
+            }
+            .etiquette-new{
+                position: absolute;
+                padding: 0;
+                margin: 0;
+                background-color: $deadGreen;
+                padding:5px 10px 5px 10px;
+                color: #119172;
+                
+                border-radius: 4px;
+                right: 17px;
+                top: 17px;
+                
+                P{
+                    margin: 0;
+                    padding: 0;
+                    font-size:13px;
+                    font-weight: 700;
+                }
+            }
+            .below-img-card{
+                height: 27%;
+                display: flex;
+                flex-direction: row;
+                .text-place{
+                    width: 75%;
+                p{
+                    margin:0px;
+                    padding: 0;
+                    padding: 1% 0 0 5%;
+                }
+                h4  {
+                    padding: 2% 0 0 5% ;
+                }
+                }
+                .hearth-place{
+                    width:25%  ;
+                }
+            }
+            
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+// footerpage
+
+footer {
+    .logo-footer{
+        object-fit: contain;
+        width: 110px;
+        margin: 10px 0 10px 0;   
+    }
+    .icone-footer{
+        height: 16px;
+        width: 16px;
+        margin-right: 10px;
+    }
+    p{
+        padding: 5px 0 5px 0;
+        margin: 0;   
     }
     display: flex;
-    width: 100%;
+    flex-direction: column;
+    color: white;
+    max-width: 100%;
+    position: relative;
+    background-color: $greyDark;
+    padding: $generalPad;
+    margin: 0;
+    font-weight: 500;
   }
