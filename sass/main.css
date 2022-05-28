@@ -302,10 +302,13 @@ h1, h2, h3, h4 {
 .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place a {
   margin: 0;
   padding: 0;
-  width: 20px;
-  height: 20px;
   cursor: pointer;
   margin-bottom: 25px;
+}
+
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg {
+  width: 20px;
+  height: 20px;
 }
 
 footer {

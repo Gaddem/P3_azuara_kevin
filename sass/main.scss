@@ -207,13 +207,16 @@ h1,h2,h3,h4{
                     justify-content: center;
                     align-items: center;
                     width:25%  ;
+
                     a{
                         margin: 0;
                         padding: 0;
-                        width: 20px;
-                        height: 20px;
                         cursor: pointer;
                         margin-bottom: 25px;
+                    }
+                    svg{
+                        width: 20px;
+                        height: 20px;
                     }
                 }
             }
