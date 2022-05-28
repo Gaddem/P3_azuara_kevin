@@ -1,7 +1,10 @@
 // général
 $greyDark : #353535;
 $greyLight :#F6F6F6;
+$greyForIcon :#797979;
 $deadGreen :#99E2D0;
+$thePuprle : #9356DC;
+$purpleLight:#F5EDFF;
 $generalPad : 20px 4% 20px 4%;
 $sizeRadiusCard : 13px;
 
@@ -65,6 +68,79 @@ h1,h2,h3,h4{
 
 
 //mainpage
+
+
+.expl-div{
+    padding: 35px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:$greyLight ;
+    P{max-width: 80%;display:flex;margin: 0;text-align: center;font-weight: 300;font-size: 16px;margin:15px 0 30px 0;}
+    h2{max-width: 80%;display:flex;margin: 0;text-align: center;}
+    .button-explore{
+        border-radius: 22px;
+        padding: 12px 20px 12px 20px;
+        color: white;
+        background: #CE96F7;
+        background: -webkit-linear-gradient(top left, #CE96F7, #9400DD);
+        background: -moz-linear-gradient(top left, #CE96F7, #9400DD);
+        background: linear-gradient(to bottom right, #CE96F7, #9400DD);
+        h3{
+            margin: 0;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+
+.fonction-div{
+    padding: $generalPad;
+    h3{
+        margin: 15px 0 20px 0;
+    }
+    .list-fonction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;  
+        .card-fonction{
+            width: 95%;
+            position: relative;
+            background-color: $greyLight;
+            border-radius: 20px;
+            padding: 25px 0 25px 0;
+            -webkit-box-shadow: 0px 0px 15px 0px lightgray;
+            box-shadow: 0px 0px 15px 0px lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                width: 20px;
+                height: 20px;
+                fill: $greyForIcon;
+                position: absolute;left: 45px;
+            }
+            h4{margin: 0;font-weight: 600;}
+            .nb-card{
+                P{margin: 0;}
+                display: flex;
+                justify-content: center;
+                position: absolute;
+                height: 22px;
+                width: 22px;
+                left: -10px;
+                color: white;
+                background-color:$thePuprle ;
+                border-radius: 50%;
+            }
+        }
+        // .card-fonction:focus,.card-fonction:active{
+        //     background-color:red;
+        // }
+    }
+}
+
 
 .restaurants{
     padding:$generalPad;
