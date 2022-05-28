@@ -287,7 +287,25 @@ h1, h2, h3, h4 {
 }
 
 .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 25%;
+}
+
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place a {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 25px;
 }
 
 footer {
