@@ -24,8 +24,9 @@ h1, h2, h3, h4 {
 .div-logo {
   display: flex;
   justify-content: center;
-  -webkit-box-shadow: 5px 5px 12px 5px grey;
-  box-shadow: 5px 5px 12px 5px black;
+  -webkit-box-shadow: 5px 5px 12px 5px lightgrey;
+  position: relative;
+  box-shadow: 5px 5px 12px 5px lightgrey;
   z-index: 10;
   overflow: visible;
 }
@@ -206,9 +207,35 @@ h1, h2, h3, h4 {
   padding: 2% 0 0 5%;
 }
 .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25%;
 }
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place a {
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:hover, .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:focus {
+  animation: fadein 3s;
+}
 
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    fill: #9356DC;
+  }
+}
 footer {
   display: flex;
   flex-direction: column;
@@ -233,6 +260,18 @@ footer .icone-footer {
 footer p {
   padding: 5px 0 5px 0;
   margin: 0;
+}
+
+.little-header {
+  position: relative;
+}
+.little-header .back {
+  position: absolute;
+  width: 20px;
+}
+.little-header img {
+  object-fit: contain;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

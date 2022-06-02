@@ -1,0 +1,14 @@
+//header
+.little-header{
+    position: relative;
+    .back{
+        position: absolute;   
+        width:20px;   
+    }
+ 
+ img{
+     object-fit: contain;
+     height: 50px;
+ }
+ 
+}

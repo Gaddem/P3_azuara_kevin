@@ -35,8 +35,9 @@ h1, h2, h3, h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 5px 5px 12px 5px grey;
-  box-shadow: 5px 5px 12px 5px black;
+  -webkit-box-shadow: 5px 5px 12px 5px lightgrey;
+  position: relative;
+  box-shadow: 5px 5px 12px 5px lightgrey;
   z-index: 10;
   overflow: visible;
 }
@@ -308,6 +309,37 @@ h1, h2, h3, h4 {
   margin-bottom: 25px;
 }
 
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:hover, .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:focus {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    fill: #9356DC;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    fill: #9356DC;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -341,5 +373,21 @@ footer .icone-footer {
 footer p {
   padding: 5px 0 5px 0;
   margin: 0;
+}
+
+.little-header {
+  position: relative;
+}
+
+.little-header .back {
+  position: absolute;
+  width: 20px;
+  height: 20;
+}
+
+.little-header img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */
