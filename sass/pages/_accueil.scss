@@ -163,6 +163,14 @@ h1,h2,h3,h4{
             border-radius: $sizeRadiusCard;
             height: 250px;
             position: relative;
+            .for-direction{
+                text-decoration: none;
+                color:black;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                
+            }
             img{
                 height: 73%;
                 width: 100%;
