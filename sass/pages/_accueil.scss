@@ -17,6 +17,7 @@ p{
     font-size: 16px;
 }
 h1,h2,h3,h4{
+    // font-family: 'Shrikhand', cursive;
     font-family: 'Raleway', sans-serif;
     margin: 0;
 }
@@ -81,19 +82,20 @@ h1,h2,h3,h4{
     background-color:$greyLight ;
     P{max-width: 80%;display:flex;margin: 0;text-align: center;font-weight: 300;font-size: 16px;margin:15px 0 30px 0;}
     h2{max-width: 80%;display:flex;margin: 0;text-align: center;}
-    .button-explore{
-        border-radius: 22px;
-        padding: 12px 20px 12px 20px;
-        color: white;
-        background: #CE96F7;
-        background: -webkit-linear-gradient(top left, #CE96F7, #9400DD);
-        background: -moz-linear-gradient(top left, #CE96F7, #9400DD);
-        background: linear-gradient(to bottom right, #CE96F7, #9400DD);
-        h3{
-            margin: 0;
-            font-weight: 500;
-            font-size: 16px;
-        }
+}
+
+.button-explore{
+    border-radius: 22px;
+    padding: 12px 20px 12px 20px;
+    color: white;
+    background: #CE96F7;
+    background: -webkit-linear-gradient(top left, #CE96F7, #9400DD);
+    background: -moz-linear-gradient(top left, #CE96F7, #9400DD);
+    background: linear-gradient(to bottom right, #CE96F7, #9400DD);
+    h3{
+        margin: 0;
+        font-weight: 500;
+        font-size: 16px;
     }
 }
 

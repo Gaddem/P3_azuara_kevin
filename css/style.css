@@ -9,7 +9,7 @@ p {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Shrikhand", cursive;
   margin: 0;
 }
 
@@ -79,7 +79,8 @@ h1, h2, h3, h4 {
   margin: 0;
   text-align: center;
 }
-.expl-div .button-explore {
+
+.button-explore {
   border-radius: 22px;
   padding: 12px 20px 12px 20px;
   color: white;
@@ -88,7 +89,7 @@ h1, h2, h3, h4 {
   background: -moz-linear-gradient(top left, #CE96F7, #9400DD);
   background: linear-gradient(to bottom right, #CE96F7, #9400DD);
 }
-.expl-div .button-explore h3 {
+.button-explore h3 {
   margin: 0;
   font-weight: 500;
   font-size: 16px;
@@ -264,14 +265,42 @@ footer p {
 
 .little-header {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
 }
 .little-header .back {
   position: absolute;
-  width: 20px;
+  width: 18px;
+  height: 18px;
+  left: 10%;
+  top: 35%;
+  fill: #353535;
 }
 .little-header img {
   object-fit: contain;
-  height: 50px;
+  width: 40%;
+}
+
+.img-prst {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  margin-bottom: -60px;
+  position: relative;
+  z-index: 3;
+}
+
+.div-menu {
+  position: relative;
+  z-index: 4;
+  padding: 20px 4% 20px 4%;
+  background-color: #F6F6F6;
+  padding-top: 30px;
+  border-top-left-radius: 12%;
+  border-top-right-radius: 12%;
 }
 
 /*# sourceMappingURL=style.css.map */
