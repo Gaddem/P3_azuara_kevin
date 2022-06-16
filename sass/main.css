@@ -1,3 +1,7 @@
+main {
+  position: relative;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,6 +32,10 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
+header {
+  position: relative;
+}
+
 .div-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,7 +46,6 @@ h1, h2, h3, h4 {
   -webkit-box-shadow: 5px 5px 12px 5px lightgrey;
   position: relative;
   box-shadow: 5px 5px 12px 5px lightgrey;
-  z-index: -10;
   overflow: visible;
 }
 
@@ -47,14 +54,13 @@ h1, h2, h3, h4 {
      object-fit: contain;
   width: 50%;
   padding: 20px 0 20px 0;
-  z-index: 10;
+  position: relative;
 }
 
 .div-location {
   background-color: #EAEAEA;
   padding: 0;
   margin: 0;
-  z-index: 1;
   -webkit-box-shadow: 10px 0px 0px 0px black;
   box-shadow: 10px 0px 0px 0px black;
   -webkit-box-pack: center;
@@ -130,6 +136,7 @@ h1, h2, h3, h4 {
 
 .fonction-div {
   padding: 20px 4% 20px 4%;
+  position: relative;
 }
 
 .fonction-div h3 {
@@ -153,7 +160,6 @@ h1, h2, h3, h4 {
 .fonction-div .list-fonction .card-fonction {
   width: 95%;
   position: relative;
-  z-index: -200;
   background-color: #F6F6F6;
   border-radius: 20px;
   padding: 25px 0 25px 0;
@@ -204,14 +210,13 @@ h1, h2, h3, h4 {
 }
 
 .main-loader {
-  -webkit-animation: fade-out 3s ease-out both;
-  animation: fade-out 3s ease-out both;
+  position: fixed;
+  -webkit-animation: appdisp 4s ease-out both;
+  animation: appdisp 4s ease-out both;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: grey;
-  opacity: 0.8;
-  position: fixed;
   top: 0px;
   left: 0px;
   height: 100%;
@@ -233,7 +238,6 @@ h1, h2, h3, h4 {
           animation: spin 2s linear infinite;
   margin-left: auto;
   margin-right: auto;
-  z-index: 6000;
 }
 
 @-webkit-keyframes spin {
@@ -260,55 +264,27 @@ h1, h2, h3, h4 {
 
 @-webkit-keyframes appdisp {
   from {
-    display: -webkit-box;
-    display: flex;
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 6000;
   }
   to {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes appdisp {
   from {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 6000;
   }
   to {
-    display: none;
-  }
-}
-
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-    cursor: wait;
-  }
-  25% {
-    opacity: 0.75;
-    cursor: wait;
-  }
-  50% {
-    opacity: 0.5;
-    cursor: wait;
-  }
-  75% {
-    opacity: 0.25;
-    cursor: wait;
-  }
-  100% {
+    visibility: hidden;
     opacity: 0;
-    z-index: -6000;
-    display: none;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -316,7 +292,6 @@ h1, h2, h3, h4 {
   padding: 20px 4% 20px 4%;
   background-color: #F6F6F6;
   position: relative;
-  z-index: -1;
 }
 
 .restaurants h2 {
@@ -476,7 +451,6 @@ footer {
   padding: 20px 4% 20px 4%;
   margin: 0;
   font-weight: 500;
-  z-index: -2;
 }
 
 footer .logo-footer {
