@@ -32,6 +32,7 @@ h1,h2,h3,h4{
 }
 
 
+
 // headerpage
 
 .div-logo{
@@ -40,13 +41,15 @@ h1,h2,h3,h4{
     -webkit-box-shadow: 5px 5px 12px 5px lightgrey; 
     position: relative;
     box-shadow: 5px 5px 12px 5px lightgrey;
+    z-index: -10;
     img{
         object-fit: contain;
         width: 50%;
         padding: 20px 0 20px 0;
+        z-index: 10;
     }
-    z-index: 10;
     overflow: visible;
+    
 }
 .div-location{
     background-color: #EAEAEA;
@@ -112,6 +115,7 @@ h1,h2,h3,h4{
         .card-fonction{
             width: 95%;
             position: relative;
+            z-index: -200;
             background-color: $greyLight;
             border-radius: 20px;
             padding: 25px 0 25px 0;
@@ -143,10 +147,85 @@ h1,h2,h3,h4{
     }
 }
 
+.main-loader{
+    -webkit-animation: fade-out 3s ease-out both;
+    animation: fade-out 3s ease-out both;
+    display:flex ;
+    background: grey;
+    opacity: 0.8;
+    position: fixed;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    align-items: center;
+    
+    .loader{
+            
+        border: 16px solid white; /* Light grey */
+        border-top: 16px solid $thePuprle; /* Blue */
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: spin 2s linear infinite;
+        // position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 6000;
+        // align-self: center;
+    }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @-webkit-keyframes appdisp { from { display: flex;} to { display: none;}  }
+        @keyframes appdisp  { from {display: flex;} to {  display: none;}  }
+
+ @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+      cursor : wait;
+    }
+    25% {
+        opacity:0.75;
+      cursor : wait;
+
+      }
+    50% {
+        opacity:0.5;
+      cursor : wait;
+
+      }
+    75% {
+        opacity:0.25;
+      cursor : wait;
+
+      }
+    100% {
+      opacity: 0;
+      z-index: -6000;
+      display: none;
+    //   cursor : ;
+
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
 
 .restaurants{
     padding:$generalPad;
     background-color: $greyLight;
+    position: relative;
+    z-index: -1;
     h2{
         font-weight: 700;
         margin-top: 30px;
@@ -278,4 +357,5 @@ footer {
     padding: $generalPad;
     margin: 0;
     font-weight: 500;
+    z-index: -2;
   }
