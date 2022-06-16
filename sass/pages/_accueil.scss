@@ -158,8 +158,6 @@ header{
 }
 
 .main-loader{
-    // -webkit-animation: fade-out 3s ease-out both;
-    // animation: fade-out 3s ease-out both;
     position: fixed;
     -webkit-animation: appdisp 4s ease-out both;
     animation: appdisp 4s ease-out both;
@@ -305,6 +303,7 @@ header{
                     align-items: center;
                     width:25%  ;
                     button{
+                        text-decoration: none;
                         margin: 0;
                         padding: 0;
                         width: 20px;

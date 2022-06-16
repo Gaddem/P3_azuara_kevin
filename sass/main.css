@@ -397,6 +397,7 @@ header {
 }
 
 .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place button {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   width: 20px;
