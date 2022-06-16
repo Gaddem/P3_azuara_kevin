@@ -396,7 +396,7 @@ header {
   width: 25%;
 }
 
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place a {
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place button {
   margin: 0;
   padding: 0;
   width: 20px;
