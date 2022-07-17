@@ -186,6 +186,11 @@ header {
     transform: rotate(360deg);
   }
 }
+html {
+  -webkit-animation: noscroll 4s ease-out both;
+  animation: noscroll 4s ease-out both;
+}
+
 @-webkit-keyframes appdisp {
   from {
     visibility: visible;
@@ -208,6 +213,22 @@ header {
     visibility: hidden;
     opacity: 0;
     z-index: -1;
+  }
+}
+@-webkit-keyframes noscroll {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
+  }
+}
+@keyframes noscroll {
+  from {
+    overflow-y: hidden;
+  }
+  to {
+    overflow-y: auto;
   }
 }
 .restaurants {
@@ -286,7 +307,8 @@ header {
   align-items: center;
   width: 25%;
 }
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place button {
+.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place span {
+  text-decoration: none;
   margin: 0;
   padding: 0;
   width: 20px;
@@ -294,8 +316,10 @@ header {
   cursor: pointer;
   margin-bottom: 25px;
 }
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:hover, .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:focus {
-  animation: fadein 3s;
+@media only screen and (min-width: 768px) {
+  .restaurants .liste-restaurants .card-resto {
+    max-width: 50%;
+  }
 }
 
 @keyframes fadein {
@@ -407,8 +431,25 @@ footer p {
   background-color: #99E2D0;
   margin: 6px 0 6px 0;
 }
+.div-menu .part-of-menu .card-menu:focus {
+  overflow: hidden;
+}
+.div-menu .part-of-menu .card-menu:focus .menu-content {
+  width: 50%;
+}
+.div-menu .part-of-menu .card-menu:focus .title-content, .div-menu .part-of-menu .card-menu:focus .details {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.div-menu .part-of-menu .card-menu:focus .validate {
+  background-color: #99E2D0;
+  width: 15%;
+}
 .div-menu .part-of-menu .card-menu {
-  background-color: white;
   margin: 0;
   border-radius: 15px;
   display: flex;

@@ -279,31 +279,36 @@ header{
                         cursor: pointer;
                         margin-bottom: 25px;
                     }
-                    svg:hover,svg:focus{
-                        animation: fadein 3s ;
+                    // svg:hover,svg:focus{
+                    //     animation: fadein 3s ;
+                        
+                    // }
+                    svg{
+                        &:active .heart--active , &:hover  .heart--active {
+                            z-index: 2;
+                            opacity: 1;
                     }
+                    &--active{
+                        color: red;
+                        font-size: 24px;
+                        z-index: 0;
+                        opacity: 0;
+                        transform-origin: bottom;
+                        transition: opacity 500ms linear;
+                    }
+                    }
+                    
                 }
             }
             
 
         }
+        
     }
 }
 
 
 
-@keyframes fadein  {
-    0% {
-        opacity:0;
-    }
-    50%{
-        opacity:0.5;
-    }
-    100% {
-        opacity:1;
-        fill: $thePuprle;
-    }
-}
 
 
 // footerpage GENERAL
@@ -334,3 +339,28 @@ footer {
     font-weight: 500;
     // z-index: -2;
   }
+
+
+
+  //Adaptation ecran 
+  @media only screen and (min-width: 768px) {
+    .card-resto{
+        max-width: 50%;
+    }
+}
+
+
+//Animation
+
+@keyframes fadein  {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100% {
+        opacity:1;
+        fill: $thePuprle;
+    }
+}
