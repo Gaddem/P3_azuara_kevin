@@ -114,7 +114,8 @@ $speed_animation: 1s;
     .card-menu {
       z-index: 100;
       position: relative;
-
+      // -webkit-animation: appdisp 2s ease-out both;
+      // animation: appdisp 2s ease-out both;
       margin: 0;
       border-radius: 15px;
       display: flex;
@@ -196,12 +197,36 @@ $speed_animation: 1s;
 @keyframes rotation-check {
   0% {
     display: block;
-    transform: rotate(180deg);
+    transform: translate(150%)rotate(180deg);
     max-height: 100%;
+    transform-origin: right 50%;
   }
   0% {
     display: block;
-    transform: rotate(360deg);
+    transform: translateX(0%)rotate(-780deg);
     max-height: 100%;
+    margin-left: 0px;
+    transform-origin: center;
+
   }
+}
+
+@for $i from 1 to 7 {
+  .card-menu:nth-child(#{$i}){
+      animation: showMenu 2#{$i}69ms;
+      animation-delay: 200ms;
+  }
+}
+
+@keyframes showMenu {
+  from{
+      opacity: 0;
+      margin-top: 30px;
+  }
+
+  to{
+      opacity: 1;
+      margin-top: 10px;
+  }
+  
 }
