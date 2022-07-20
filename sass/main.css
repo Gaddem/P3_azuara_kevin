@@ -482,7 +482,33 @@ footer p {
 
 @media only screen and (min-width: 768px) {
   .card-resto {
-    max-width: 50%;
+    max-width: 20%;
+  }
+  .div-logo img {
+    width: 10%;
+  }
+  .fonction-div {
+    padding: 20px 25% 20px 25%;
+  }
+  .restaurants {
+    padding: 20px 0px 20px 0px;
+  }
+  .restaurants .liste-restaurants {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .restaurants h2 {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
   }
 }
 
@@ -732,6 +758,29 @@ footer p {
   text-align: center;
   font-size: 14px;
   padding: 2px 0 2px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .button-explore-2 {
+    width: 25%;
+  }
+  .little-header img {
+    width: 10%;
+  }
+  .card-menu {
+    width: 30%;
+  }
+  .div-menu .part-of-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @-webkit-keyframes reduce-content {

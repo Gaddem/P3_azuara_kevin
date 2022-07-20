@@ -345,8 +345,31 @@ footer {
   //Adaptation ecran 
   @media only screen and (min-width: 768px) {
     .card-resto{
-        max-width: 50%;
+        max-width: 20%;
     }
+    .div-logo{
+        img{
+            width: 10%;
+        }
+    }
+    .fonction-div{
+        padding: 20px 25% 20px 25%;
+    }
+    .restaurants{
+        padding: 20px 0px 20px 0px;
+        .liste-restaurants{
+            flex-direction: row;
+            align-items: center;
+            gap: 0px;
+            justify-content: space-around;
+        }
+        h2{
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px 20px 0px;
+        }
+    }
+   
 }
 
 

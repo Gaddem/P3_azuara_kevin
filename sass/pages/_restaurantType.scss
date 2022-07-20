@@ -172,6 +172,32 @@ $speed_animation: 1s;
   }
 }
 
+
+
+@media only screen and (min-width: 768px) {
+  .button-explore-2{
+  width: 25%;
+
+  }
+  .little-header{
+    img{
+      width: 10%;
+    }
+  }
+  .card-menu{
+    width: 30%;
+  }
+  .div-menu{
+    .part-of-menu{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
+
+
+
 @keyframes reduce-content {
   0% {
   }
