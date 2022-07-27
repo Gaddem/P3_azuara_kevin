@@ -8,12 +8,15 @@ body {
 }
 
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
 }
 
-h1, h2, h3, h4 {
-  font-family: 'Raleway', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
   margin: 0;
 }
 
@@ -58,7 +61,7 @@ header {
 }
 
 .div-location {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 0;
   margin: 0;
   -webkit-box-shadow: 10px 0px 0px 0px black;
@@ -95,7 +98,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .expl-div P {
@@ -123,9 +126,9 @@ header {
   border-radius: 22px;
   padding: 12px 20px 12px 20px;
   color: white;
-  background: #CE96F7;
-  background: -webkit-gradient(linear, left top, right bottom, from(#CE96F7), to(#9400DD));
-  background: linear-gradient(to bottom right, #CE96F7, #9400DD);
+  background: #ce96f7;
+  background: -webkit-gradient(linear, left top, right bottom, from(#ce96f7), to(#9400dd));
+  background: linear-gradient(to bottom right, #ce96f7, #9400dd);
 }
 
 .button-explore h3 {
@@ -160,7 +163,7 @@ header {
 .fonction-div .list-fonction .card-fonction {
   width: 95%;
   position: relative;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 20px;
   padding: 25px 0 25px 0;
   -webkit-box-shadow: 0px 0px 15px 0px lightgray;
@@ -201,7 +204,7 @@ header {
   width: 22px;
   left: -10px;
   color: white;
-  background-color: #9356DC;
+  background-color: #9356dc;
   border-radius: 50%;
 }
 
@@ -229,7 +232,7 @@ header {
 .main-loader .loader {
   border: 16px solid white;
   /* Light grey */
-  border-top: 16px solid #9356DC;
+  border-top: 16px solid #9356dc;
   /* Blue */
   border-radius: 50%;
   width: 100px;
@@ -313,7 +316,7 @@ html {
 
 .restaurants {
   padding: 20px 4% 20px 4%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   position: relative;
 }
 
@@ -345,12 +348,44 @@ html {
   position: relative;
 }
 
+.restaurants .liste-restaurants .card-resto span {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.restaurants .liste-restaurants .card-resto .heart-no-complete {
+  color: black;
+  z-index: 20;
+}
+
+.restaurants .liste-restaurants .card-resto .heart-no-complete:focus .heart-complete,
+.restaurants .liste-restaurants .card-resto .heart-no-complete:hover .heart-complete {
+  z-index: 2;
+  opacity: 1;
+}
+
+.restaurants .liste-restaurants .card-resto .heart-no-complete .heart-complete {
+  z-index: 0;
+  opacity: 0;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-transition: opacity 500ms linear;
+  transition: opacity 500ms linear;
+}
+
+.restaurants .liste-restaurants .card-resto .heart-no-complete .heart-complete .heart-active {
+  background: linear-gradient(175deg, red 0%, blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .restaurants .liste-restaurants .card-resto .for-direction {
   text-decoration: none;
   color: black;
   margin: 0;
   padding: 0;
   width: 100%;
+  z-index: 0;
 }
 
 .restaurants .liste-restaurants .card-resto img {
@@ -366,7 +401,7 @@ html {
   position: absolute;
   padding: 0;
   margin: 0;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 5px 10px 5px 10px;
   color: #119172;
   border-radius: 4px;
@@ -417,32 +452,33 @@ html {
       -ms-flex-align: center;
           align-items: center;
   width: 25%;
+  position: relative;
 }
 
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place span {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  margin-bottom: 25px;
+@-webkit-keyframes REMPLISSAGE {
+  0% {
+    .heart-complete {
+      fill: none;
+    }
+  }
+  100% {
+    .heart-complete {
+      fill: red;
+    }
+  }
 }
 
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:active .heart--active, .restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg:hover .heart--active {
-  z-index: 2;
-  opacity: 1;
-}
-
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place svg--active {
-  color: red;
-  font-size: 24px;
-  z-index: 0;
-  opacity: 0;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transition: opacity 500ms linear;
-  transition: opacity 500ms linear;
+@keyframes REMPLISSAGE {
+  0% {
+    .heart-complete {
+      fill: none;
+    }
+  }
+  100% {
+    .heart-complete {
+      fill: red;
+    }
+  }
 }
 
 footer {
@@ -521,7 +557,7 @@ footer p {
   }
   100% {
     opacity: 1;
-    fill: #9356DC;
+    fill: #9356dc;
   }
 }
 
@@ -534,7 +570,7 @@ footer p {
   }
   100% {
     opacity: 1;
-    fill: #9356DC;
+    fill: #9356dc;
   }
 }
 
@@ -582,7 +618,7 @@ footer p {
   position: relative;
   z-index: 4;
   padding: 20px 4% 20px 4%;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   padding-top: 30px;
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
@@ -633,7 +669,7 @@ footer p {
 .div-menu .part-of-menu .div-content-soul .soul {
   height: 3px;
   width: 43px;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   margin: 6px 0 6px 0;
 }
 
@@ -807,7 +843,7 @@ footer p {
     }
   }
   100% {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     width: 22%;
     display: block;
   }
@@ -821,7 +857,7 @@ footer p {
     }
   }
   100% {
-    background-color: #99E2D0;
+    background-color: #99e2d0;
     width: 22%;
     display: block;
   }
