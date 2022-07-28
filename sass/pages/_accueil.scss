@@ -288,17 +288,12 @@ html {
           transform-origin: bottom;
           transition: opacity 500ms linear;
           .heart-active {
-            background: linear-gradient(
-              175deg,
-               red  0%,
-              blue 100%
-            );
+            background: linear-gradient(175deg, red 0%, blue 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
         }
       }
-    
 
       .for-direction {
         text-decoration: none;

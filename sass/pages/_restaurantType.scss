@@ -172,31 +172,26 @@ $speed_animation: 1s;
   }
 }
 
-
-
 @media only screen and (min-width: 768px) {
-  .button-explore-2{
-  width: 25%;
-
+  .button-explore-2 {
+    width: 25%;
   }
-  .little-header{
-    img{
+  .little-header {
+    img {
       width: 10%;
     }
   }
-  .card-menu{
+  .card-menu {
     width: 30%;
   }
-  .div-menu{
-    .part-of-menu{
+  .div-menu {
+    .part-of-menu {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
     }
   }
 }
-
-
 
 @keyframes reduce-content {
   0% {
@@ -223,36 +218,34 @@ $speed_animation: 1s;
 @keyframes rotation-check {
   0% {
     display: block;
-    transform: translate(150%)rotate(180deg);
+    transform: translate(150%) rotate(180deg);
     max-height: 100%;
     transform-origin: right 50%;
   }
   0% {
     display: block;
-    transform: translateX(0%)rotate(-780deg);
+    transform: translateX(0%) rotate(-780deg);
     max-height: 100%;
     margin-left: 0px;
     transform-origin: center;
-
   }
 }
 
 @for $i from 1 to 7 {
-  .card-menu:nth-child(#{$i}){
-      animation: showMenu 2#{$i}69ms;
-      animation-delay: 200ms;
+  .card-menu:nth-child(#{$i}) {
+    animation: showMenu 2#{$i}69ms;
+    animation-delay: 200ms;
   }
 }
 
 @keyframes showMenu {
-  from{
-      opacity: 0;
-      margin-top: 30px;
+  from {
+    opacity: 0;
+    margin-top: 30px;
   }
 
-  to{
-      opacity: 1;
-      margin-top: 10px;
+  to {
+    opacity: 1;
+    margin-top: 10px;
   }
-  
 }
