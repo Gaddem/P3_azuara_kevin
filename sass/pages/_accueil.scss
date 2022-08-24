@@ -105,6 +105,7 @@ header {
 }
 
 .button-explore {
+  cursor: pointer;
   border-radius: 22px;
   padding: 12px 20px 12px 20px;
   color: white;
@@ -112,10 +113,21 @@ header {
   background: -webkit-linear-gradient(top left, #ce96f7, #9400dd);
   background: -moz-linear-gradient(top left, #ce96f7, #9400dd);
   background: linear-gradient(to bottom right, #ce96f7, #9400dd);
+  //   -webkit-box-shadow: 5px 5px 15px 5px grey;
+  // box-shadow: 5px 5px 15px 5px grey;
   h3 {
     margin: 0;
     font-weight: 500;
     font-size: 16px;
+  }
+  &:hover {
+    background: linear-gradient(
+      to bottom right,
+      lighten($color: #ce96f7, $amount: 2),
+      lighten($color: #9400dd, $amount: 15)
+    );
+    -webkit-box-shadow: 5px 5px 15px 5px darken($color: grey, $amount: 10);
+    box-shadow: 5px 5px 15px 5px darken($color: grey, $amount: 10);
   }
 }
 
@@ -131,6 +143,11 @@ header {
     align-items: center;
     gap: 20px;
     .card-fonction {
+      &:hover {
+        -webkit-box-shadow: 5px 5px 15px 5px
+          darken($color: lightgrey, $amount: 2);
+        box-shadow: 5px 5px 15px 5px darken($color: lightgrey, $amount: 2);
+      }
       width: 95%;
       position: relative;
       // z-index: -200;
@@ -263,6 +280,11 @@ html {
     align-items: center;
     gap: 10px;
     .card-resto {
+      &:hover {
+        -webkit-box-shadow: 5px 5px 15px 5px
+          darken($color: lightgrey, $amount: 2);
+        box-shadow: 5px 5px 15px 5px darken($color: lightgrey, $amount: 2);
+      }
       width: 100%;
       background-color: white;
       border-radius: $sizeRadiusCard;
@@ -276,6 +298,8 @@ html {
       .heart-no-complete {
         color: black;
         z-index: 20;
+        margin-bottom: 15px;
+        margin-right: 20px;
 
         &:focus .heart-complete,
         &:hover .heart-complete {
@@ -344,30 +368,28 @@ html {
             padding: 2% 0 0 5%;
           }
         }
-        .hearth-place {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 25%;
-          position: relative;
-        }
       }
     }
   }
 }
 
-@keyframes REMPLISSAGE {
-  0% {
-    .heart-complete {
-      fill: none;
-    }
-  }
-  100% {
-    .heart-complete {
-      fill: red;
-    }
-  }
+.hearth-place {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
+// @keyframes REMPLISSAGE {
+//   0% {
+//     .heart-complete {
+//       fill: none;
+//     }
+//   }
+//   100% {
+//     .heart-complete {
+//       fill: red;
+//     }
+//   }
+// }
 
 // footerpage GENERAL
 

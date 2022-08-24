@@ -21,16 +21,9 @@ h4 {
 }
 
 .lign-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -40,18 +33,13 @@ header {
 }
 
 .div-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-shadow: 5px 5px 12px 5px lightgrey;
   position: relative;
   box-shadow: 5px 5px 12px 5px lightgrey;
   overflow: visible;
 }
-
 .div-logo img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -64,23 +52,16 @@ header {
   background-color: #eaeaea;
   padding: 0;
   margin: 0;
-  -webkit-box-shadow: 10px 0px 0px 0px black;
   box-shadow: 10px 0px 0px 0px black;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   padding: 14px 0 14px 0;
 }
-
 .div-location img {
   width: 16px;
   height: 16px;
 }
-
 .div-location p {
   margin: 0 0 0 20px;
   color: #353535;
@@ -88,23 +69,13 @@ header {
 
 .expl-div {
   padding: 35px 0 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: #f6f6f6;
 }
-
 .expl-div P {
   max-width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   text-align: center;
@@ -112,73 +83,58 @@ header {
   font-size: 16px;
   margin: 15px 0 30px 0;
 }
-
 .expl-div h2 {
   max-width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0;
   text-align: center;
 }
 
 .button-explore {
+  cursor: pointer;
   border-radius: 22px;
   padding: 12px 20px 12px 20px;
   color: white;
   background: #ce96f7;
-  background: -webkit-gradient(linear, left top, right bottom, from(#ce96f7), to(#9400dd));
   background: linear-gradient(to bottom right, #ce96f7, #9400dd);
 }
-
 .button-explore h3 {
   margin: 0;
   font-weight: 500;
   font-size: 16px;
+}
+.button-explore:hover {
+  background: linear-gradient(to bottom right, #d29ff8, #b92bff);
+  box-shadow: 5px 5px 15px 5px #676767;
 }
 
 .fonction-div {
   padding: 20px 4% 20px 4%;
   position: relative;
 }
-
 .fonction-div h3 {
   margin: 15px 0 20px 0;
 }
-
 .fonction-div .list-fonction {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
-
 .fonction-div .list-fonction .card-fonction {
   width: 95%;
   position: relative;
   background-color: #f6f6f6;
   border-radius: 20px;
   padding: 25px 0 25px 0;
-  -webkit-box-shadow: 0px 0px 15px 0px lightgray;
   box-shadow: 0px 0px 15px 0px lightgray;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
+.fonction-div .list-fonction .card-fonction:hover {
+  box-shadow: 5px 5px 15px 5px #cecece;
+}
 .fonction-div .list-fonction .card-fonction svg {
   width: 20px;
   height: 20px;
@@ -186,19 +142,13 @@ header {
   position: absolute;
   left: 45px;
 }
-
 .fonction-div .list-fonction .card-fonction h4 {
   margin: 0;
   font-weight: 600;
 }
-
 .fonction-div .list-fonction .card-fonction .nb-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: absolute;
   height: 22px;
   width: 22px;
@@ -207,7 +157,6 @@ header {
   background-color: #9356dc;
   border-radius: 50%;
 }
-
 .fonction-div .list-fonction .card-fonction .nb-card P {
   margin: 0;
 }
@@ -216,24 +165,17 @@ header {
   position: fixed;
   -webkit-animation: appdisp 4s ease-out both;
   animation: appdisp 4s ease-out both;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background: grey;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .main-loader .loader {
-  border: 16px solid white;
-  /* Light grey */
-  border-top: 16px solid #9356dc;
-  /* Blue */
+  border: 16px solid white; /* Light grey */
+  border-top: 16px solid #9356dc; /* Blue */
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -245,26 +187,21 @@ header {
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 html {
   -webkit-animation: noscroll 4s ease-out both;
   animation: noscroll 4s ease-out both;
@@ -282,7 +219,6 @@ html {
     z-index: -1;
   }
 }
-
 @keyframes appdisp {
   from {
     visibility: visible;
@@ -295,7 +231,6 @@ html {
     z-index: -1;
   }
 }
-
 @-webkit-keyframes noscroll {
   from {
     overflow-y: hidden;
@@ -304,7 +239,6 @@ html {
     overflow-y: auto;
   }
 }
-
 @keyframes noscroll {
   from {
     overflow-y: hidden;
@@ -313,33 +247,22 @@ html {
     overflow-y: auto;
   }
 }
-
 .restaurants {
   padding: 20px 4% 20px 4%;
   background-color: #f6f6f6;
   position: relative;
 }
-
 .restaurants h2 {
   font-weight: 700;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .restaurants .liste-restaurants {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
-
 .restaurants .liste-restaurants .card-resto {
   width: 100%;
   background-color: white;
@@ -347,38 +270,34 @@ html {
   height: 250px;
   position: relative;
 }
-
+.restaurants .liste-restaurants .card-resto:hover {
+  box-shadow: 5px 5px 15px 5px #cecece;
+}
 .restaurants .liste-restaurants .card-resto span {
   cursor: pointer;
   font-size: 22px;
 }
-
 .restaurants .liste-restaurants .card-resto .heart-no-complete {
   color: black;
   z-index: 20;
+  margin-bottom: 15px;
+  margin-right: 20px;
 }
-
-.restaurants .liste-restaurants .card-resto .heart-no-complete:focus .heart-complete,
-.restaurants .liste-restaurants .card-resto .heart-no-complete:hover .heart-complete {
+.restaurants .liste-restaurants .card-resto .heart-no-complete:focus .heart-complete, .restaurants .liste-restaurants .card-resto .heart-no-complete:hover .heart-complete {
   z-index: 2;
   opacity: 1;
 }
-
 .restaurants .liste-restaurants .card-resto .heart-no-complete .heart-complete {
   z-index: 0;
   opacity: 0;
-  -webkit-transform-origin: bottom;
-          transform-origin: bottom;
-  -webkit-transition: opacity 500ms linear;
+  transform-origin: bottom;
   transition: opacity 500ms linear;
 }
-
 .restaurants .liste-restaurants .card-resto .heart-no-complete .heart-complete .heart-active {
   background: linear-gradient(175deg, red 0%, blue 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .restaurants .liste-restaurants .card-resto .for-direction {
   text-decoration: none;
   color: black;
@@ -387,7 +306,6 @@ html {
   width: 100%;
   z-index: 0;
 }
-
 .restaurants .liste-restaurants .card-resto img {
   height: 73%;
   width: 100%;
@@ -396,7 +314,6 @@ html {
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
 }
-
 .restaurants .liste-restaurants .card-resto .etiquette-new {
   position: absolute;
   padding: 0;
@@ -408,87 +325,38 @@ html {
   right: 17px;
   top: 17px;
 }
-
 .restaurants .liste-restaurants .card-resto .etiquette-new P {
   margin: 0;
   padding: 0;
   font-size: 13px;
   font-weight: 700;
 }
-
 .restaurants .liste-restaurants .card-resto .below-img-card {
   height: 27%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 .restaurants .liste-restaurants .card-resto .below-img-card .text-place {
   width: 75%;
 }
-
 .restaurants .liste-restaurants .card-resto .below-img-card .text-place p {
   margin: 0px;
   padding: 0;
   padding: 1% 0 0 5%;
 }
-
 .restaurants .liste-restaurants .card-resto .below-img-card .text-place h4 {
   padding: 2% 0 0 5%;
 }
 
-.restaurants .liste-restaurants .card-resto .below-img-card .hearth-place {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 25%;
-  position: relative;
-}
-
-@-webkit-keyframes REMPLISSAGE {
-  0% {
-    .heart-complete {
-      fill: none;
-    }
-  }
-  100% {
-    .heart-complete {
-      fill: red;
-    }
-  }
-}
-
-@keyframes REMPLISSAGE {
-  0% {
-    .heart-complete {
-      fill: none;
-    }
-  }
-  100% {
-    .heart-complete {
-      fill: red;
-    }
-  }
+.hearth-place {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   color: white;
   max-width: 100%;
   position: relative;
@@ -497,20 +365,17 @@ footer {
   margin: 0;
   font-weight: 500;
 }
-
 footer .logo-footer {
   -o-object-fit: contain;
      object-fit: contain;
   width: 110px;
   margin: 10px 0 10px 0;
 }
-
 footer .icone-footer {
   height: 16px;
   width: 16px;
   margin-right: 10px;
 }
-
 footer p {
   padding: 5px 0 5px 0;
   margin: 0;
@@ -530,16 +395,10 @@ footer p {
     padding: 20px 0px 20px 0px;
   }
   .restaurants .liste-restaurants {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     gap: 0px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
   }
   .restaurants h2 {
     width: 100%;
@@ -547,7 +406,6 @@ footer p {
     padding: 20px 0px 20px 0px;
   }
 }
-
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -560,7 +418,6 @@ footer p {
     fill: #9356dc;
   }
 }
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -573,21 +430,13 @@ footer p {
     fill: #9356dc;
   }
 }
-
 .little-header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   height: 70px;
 }
-
 .little-header .back {
   position: absolute;
   width: 18px;
@@ -596,7 +445,6 @@ footer p {
   top: 35%;
   fill: #353535;
 }
-
 .little-header img {
   -o-object-fit: contain;
      object-fit: contain;
@@ -623,66 +471,67 @@ footer p {
   border-top-left-radius: 35px;
   border-top-right-radius: 35px;
 }
-
 .div-menu .top-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   margin-top: 5px;
 }
-
 .div-menu .top-menu h2 {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
   font-size: 29px;
 }
-
-.div-menu .top-menu a {
-  height: 22px;
-  width: 22px;
-  margin-right: 8%;
+.div-menu .top-menu .heart-location {
+  position: absolute;
+  right: 0;
 }
-
-.div-menu .top-menu a svg {
-  width: 100%;
+.div-menu .top-menu .heart-location span {
+  cursor: pointer;
+  font-size: 30px;
 }
-
+.div-menu .top-menu .heart-location .heart-no-complete {
+  color: black;
+  z-index: 20;
+}
+.div-menu .top-menu .heart-location .heart-no-complete:focus .heart-complete, .div-menu .top-menu .heart-location .heart-no-complete:hover .heart-complete {
+  z-index: 2;
+  opacity: 1;
+}
+.div-menu .top-menu .heart-location .heart-no-complete .heart-complete {
+  z-index: 0;
+  opacity: 0;
+  transform-origin: bottom;
+  transition: opacity 500ms linear;
+}
+.div-menu .top-menu .heart-location .heart-no-complete .heart-complete .heart-active {
+  background: linear-gradient(175deg, red 0%, blue 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .div-menu .part-of-menu {
   margin: 35px 0px 25px 0px;
   position: relative;
 }
-
 .div-menu .part-of-menu .div-content-soul p {
   margin: 0;
 }
-
 .div-menu .part-of-menu .div-content-soul .soul {
   height: 3px;
   width: 43px;
   background-color: #99e2d0;
   margin: 6px 0 6px 0;
 }
-
 .div-menu .part-of-menu .card-menu:focus {
   overflow: hidden;
   position: relative;
 }
-
 .div-menu .part-of-menu .card-menu:focus .menu-content {
   -webkit-animation: reduce-content 1s ease 0s 1 normal forwards;
           animation: reduce-content 1s ease 0s 1 normal forwards;
 }
-
 .div-menu .part-of-menu .card-menu:focus .title-content,
 .div-menu .part-of-menu .card-menu:focus .details {
   display: -webkit-box;
@@ -692,7 +541,6 @@ footer p {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .div-menu .part-of-menu .card-menu:focus .validate {
   overflow: hidden;
   position: relative;
@@ -701,7 +549,6 @@ footer p {
           animation: space-valide 1s ease 0s 1 normal forwards;
   z-index: -10;
 }
-
 .div-menu .part-of-menu .card-menu:focus .validate svg {
   overflow: hidden;
   width: 40%;
@@ -713,71 +560,45 @@ footer p {
   left: 25%;
   top: 25%;
 }
-
 .div-menu .part-of-menu .card-menu {
   z-index: 100;
   position: relative;
   margin: 0;
   border-radius: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-shadow: 1px 5px 23px -18px rgba(0, 0, 0, 0.47);
+  flex-direction: row;
+  justify-content: space-between;
   box-shadow: 1px 5px 23px -18px rgba(0, 0, 0, 0.47);
   margin: 10px 0px 10px 0px;
 }
-
 .div-menu .part-of-menu .card-menu .menu-content {
   width: 80%;
   padding: 8px 0px 8px 0px;
 }
-
 .div-menu .part-of-menu .card-menu .menu-content .title-content {
   font-weight: 600;
 }
-
 .div-menu .part-of-menu .card-menu .menu-content .details {
   font-size: 12px;
 }
-
 .div-menu .part-of-menu .card-menu .menu-content p {
   margin: 4px 0px 4px 10px;
 }
-
 .div-menu .part-of-menu .card-menu .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   width: 20%;
 }
-
 .div-menu .part-of-menu .card-menu .price p {
   font-weight: 600;
   margin: 0px 0px 12px 6px;
 }
-
 .div-menu .part-of-menu .card-menu .validate {
   z-index: -100;
   position: relative;
 }
-
 .div-menu .part-of-menu .card-menu .validate svg {
   width: 0;
   height: 0;
@@ -786,10 +607,8 @@ footer p {
 .button-explore-2 {
   width: 45%;
   margin: 40px auto 60px auto;
-  -webkit-box-shadow: 1px 5px 23px -4px rgba(0, 0, 0, 0.64);
   box-shadow: 1px 5px 23px -4px rgba(0, 0, 0, 0.64);
 }
-
 .button-explore-2 h3 {
   text-align: center;
   font-size: 14px;
@@ -807,40 +626,24 @@ footer p {
     width: 30%;
   }
   .div-menu .part-of-menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
-
 @-webkit-keyframes reduce-content {
-  0% {
-  }
   100% {
     width: 55%;
   }
 }
-
 @keyframes reduce-content {
-  0% {
-  }
   100% {
     width: 55%;
   }
 }
-
 @-webkit-keyframes space-valide {
   0% {
     width: 0%;
-    svg {
-      display: none;
-    }
   }
   100% {
     background-color: #99e2d0;
@@ -848,13 +651,9 @@ footer p {
     display: block;
   }
 }
-
 @keyframes space-valide {
   0% {
     width: 0%;
-    svg {
-      display: none;
-    }
   }
   100% {
     background-color: #99e2d0;
@@ -862,108 +661,96 @@ footer p {
     display: block;
   }
 }
-
 @-webkit-keyframes rotation-check {
   0% {
     display: block;
-    -webkit-transform: translate(150%) rotate(180deg);
-            transform: translate(150%) rotate(180deg);
+    transform: translate(150%) rotate(180deg);
     max-height: 100%;
-    -webkit-transform-origin: right 50%;
-            transform-origin: right 50%;
+    transform-origin: right 50%;
   }
   0% {
     display: block;
-    -webkit-transform: translateX(0%) rotate(-780deg);
-            transform: translateX(0%) rotate(-780deg);
+    transform: translateX(0%) rotate(-780deg);
     max-height: 100%;
     margin-left: 0px;
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
   }
 }
-
 @keyframes rotation-check {
   0% {
     display: block;
-    -webkit-transform: translate(150%) rotate(180deg);
-            transform: translate(150%) rotate(180deg);
+    transform: translate(150%) rotate(180deg);
     max-height: 100%;
-    -webkit-transform-origin: right 50%;
-            transform-origin: right 50%;
+    transform-origin: right 50%;
   }
   0% {
     display: block;
-    -webkit-transform: translateX(0%) rotate(-780deg);
-            transform: translateX(0%) rotate(-780deg);
+    transform: translateX(0%) rotate(-780deg);
     max-height: 100%;
     margin-left: 0px;
-    -webkit-transform-origin: center;
-            transform-origin: center;
+    transform-origin: center;
   }
 }
-
 .card-menu:nth-child(1) {
-  -webkit-animation: showMenu 2169ms;
-          animation: showMenu 2169ms;
+  -webkit-animation: showMenu 1099ms;
+          animation: showMenu 1099ms;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .card-menu:nth-child(2) {
-  -webkit-animation: showMenu 2269ms;
-          animation: showMenu 2269ms;
+  -webkit-animation: showMenu 1198ms;
+          animation: showMenu 1198ms;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .card-menu:nth-child(3) {
-  -webkit-animation: showMenu 2369ms;
-          animation: showMenu 2369ms;
+  -webkit-animation: showMenu 1297ms;
+          animation: showMenu 1297ms;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .card-menu:nth-child(4) {
-  -webkit-animation: showMenu 2469ms;
-          animation: showMenu 2469ms;
+  -webkit-animation: showMenu 1396ms;
+          animation: showMenu 1396ms;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .card-menu:nth-child(5) {
-  -webkit-animation: showMenu 2569ms;
-          animation: showMenu 2569ms;
+  -webkit-animation: showMenu 1495ms;
+          animation: showMenu 1495ms;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 .card-menu:nth-child(6) {
-  -webkit-animation: showMenu 2669ms;
-          animation: showMenu 2669ms;
+  -webkit-animation: showMenu 1594ms;
+          animation: showMenu 1594ms;
   -webkit-animation-delay: 200ms;
           animation-delay: 200ms;
 }
 
 @-webkit-keyframes showMenu {
-  from {
+  0% {
     opacity: 0;
     margin-top: 30px;
   }
-  to {
+  100% {
     opacity: 1;
     margin-top: 10px;
   }
 }
 
 @keyframes showMenu {
-  from {
+  0% {
     opacity: 0;
     margin-top: 30px;
   }
-  to {
+  100% {
     opacity: 1;
     margin-top: 10px;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

@@ -46,18 +46,51 @@ $speed_animation: 1s;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     margin-top: 5px;
     h2 {
       font-family: "Shrikhand", cursive;
       font-weight: 500;
       font-size: 29px;
     }
-    a {
-      height: 22px;
-      width: 22px;
-      margin-right: 8%;
-      svg {
-        width: 100%;
+    // a {
+    //   height: 22px;
+    //   width: 22px;
+    //   margin-right: 8%;
+    //   svg {
+    //     width: 100%;
+    //   }
+    // }
+    .heart-location{
+      position: absolute;
+      right: 0;
+      span {
+        cursor: pointer;
+        font-size: 30px;
+      }
+      .heart-no-complete {
+   
+        color: black;
+        z-index: 20;
+ 
+
+
+        &:focus .heart-complete,
+        &:hover .heart-complete {
+          z-index: 2;
+          opacity: 1;
+        }
+        .heart-complete {
+          z-index: 0;
+          opacity: 0;
+          transform-origin: bottom;
+          transition: opacity 500ms linear;
+          .heart-active {
+            background: linear-gradient(175deg, red 0%, blue 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
       }
     }
   }
@@ -203,9 +236,7 @@ $speed_animation: 1s;
 @keyframes space-valide {
   0% {
     width: 0%;
-    svg {
-      display: none;
-    }
+   
   }
 
   100% {
@@ -231,20 +262,20 @@ $speed_animation: 1s;
   }
 }
 
-@for $i from 1 to 7 {
-  .card-menu:nth-child(#{$i}) {
-    animation: showMenu 2#{$i}69ms;
+@for $io from 1 to 7 {
+  .card-menu:nth-child(#{$io}) {
+    animation: showMenu #{1000 + $io * 99}ms;
     animation-delay: 200ms;
   }
 }
 
 @keyframes showMenu {
-  from {
+  0% {
     opacity: 0;
     margin-top: 30px;
   }
 
-  to {
+  100% {
     opacity: 1;
     margin-top: 10px;
   }
