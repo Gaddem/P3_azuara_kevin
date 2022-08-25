@@ -53,15 +53,7 @@ $speed_animation: 1s;
       font-weight: 500;
       font-size: 29px;
     }
-    // a {
-    //   height: 22px;
-    //   width: 22px;
-    //   margin-right: 8%;
-    //   svg {
-    //     width: 100%;
-    //   }
-    // }
-    .heart-location{
+    .heart-location {
       position: absolute;
       right: 0;
       span {
@@ -69,11 +61,8 @@ $speed_animation: 1s;
         font-size: 30px;
       }
       .heart-no-complete {
-   
         color: black;
         z-index: 20;
- 
-
 
         &:focus .heart-complete,
         &:hover .heart-complete {
@@ -147,8 +136,6 @@ $speed_animation: 1s;
     .card-menu {
       z-index: 100;
       position: relative;
-      // -webkit-animation: appdisp 2s ease-out both;
-      // animation: appdisp 2s ease-out both;
       margin: 0;
       border-radius: 15px;
       display: flex;
@@ -204,7 +191,7 @@ $speed_animation: 1s;
     padding: 2px 0 2px 0;
   }
 }
-
+//adaption garnd écran
 @media only screen and (min-width: 768px) {
   .button-explore-2 {
     width: 25%;
@@ -225,7 +212,7 @@ $speed_animation: 1s;
     }
   }
 }
-
+//animation adapation après check
 @keyframes reduce-content {
   0% {
   }
@@ -233,10 +220,10 @@ $speed_animation: 1s;
     width: 55%;
   }
 }
+//animation adapation après check
 @keyframes space-valide {
   0% {
     width: 0%;
-   
   }
 
   100% {
@@ -245,7 +232,7 @@ $speed_animation: 1s;
     display: block;
   }
 }
-
+//animation rotation de check
 @keyframes rotation-check {
   0% {
     display: block;
@@ -262,13 +249,14 @@ $speed_animation: 1s;
   }
 }
 
+//apparition décalé boucle de décalage
 @for $io from 1 to 7 {
   .card-menu:nth-child(#{$io}) {
     animation: showMenu #{1000 + $io * 99}ms;
     animation-delay: 200ms;
   }
 }
-
+//apparition décalé animation
 @keyframes showMenu {
   0% {
     opacity: 0;

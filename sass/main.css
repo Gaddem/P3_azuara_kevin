@@ -185,6 +185,11 @@ header {
   margin-right: auto;
 }
 
+html {
+  -webkit-animation: noscroll 4s ease-out both;
+  animation: noscroll 4s ease-out both;
+}
+
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -202,11 +207,6 @@ header {
     transform: rotate(360deg);
   }
 }
-html {
-  -webkit-animation: noscroll 4s ease-out both;
-  animation: noscroll 4s ease-out both;
-}
-
 @-webkit-keyframes appdisp {
   from {
     visibility: visible;

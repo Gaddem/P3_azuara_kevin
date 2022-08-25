@@ -24,7 +24,6 @@ h1,
 h2,
 h3,
 h4 {
-  // font-family: 'Shrikhand', cursive;
   font-family: "Raleway", sans-serif;
   margin: 0;
 }
@@ -53,7 +52,6 @@ header {
     width: 50%;
     padding: 20px 0 20px 0;
     position: relative;
-    // z-index: 10;
   }
   overflow: visible;
 }
@@ -61,7 +59,6 @@ header {
   background-color: #eaeaea;
   padding: 0;
   margin: 0;
-  // z-index: 1;
   -webkit-box-shadow: 10px 0px 0px 0px black;
   box-shadow: 10px 0px 0px 0px black;
   justify-content: center;
@@ -71,7 +68,6 @@ header {
   img {
     width: 16px;
     height: 16px;
-    // padding-right: 20px;
   }
   p {
     margin: 0 0 0 20px;
@@ -113,8 +109,6 @@ header {
   background: -webkit-linear-gradient(top left, #ce96f7, #9400dd);
   background: -moz-linear-gradient(top left, #ce96f7, #9400dd);
   background: linear-gradient(to bottom right, #ce96f7, #9400dd);
-  //   -webkit-box-shadow: 5px 5px 15px 5px grey;
-  // box-shadow: 5px 5px 15px 5px grey;
   h3 {
     margin: 0;
     font-weight: 500;
@@ -150,7 +144,6 @@ header {
       }
       width: 95%;
       position: relative;
-      // z-index: -200;
       background-color: $greyLight;
       border-radius: 20px;
       padding: 25px 0 25px 0;
@@ -211,6 +204,13 @@ header {
     margin-right: auto;
   }
 }
+
+html {
+  -webkit-animation: noscroll 4s ease-out both;
+  animation: noscroll 4s ease-out both;
+}
+
+//animation roation loader
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -219,10 +219,8 @@ header {
     transform: rotate(360deg);
   }
 }
-html {
-  -webkit-animation: noscroll 4s ease-out both;
-  animation: noscroll 4s ease-out both;
-}
+
+//animation disparition du loader
 @-webkit-keyframes appdisp {
   from {
     visibility: visible;
@@ -235,6 +233,7 @@ html {
     z-index: -1;
   }
 }
+//animation disparition du loader
 @keyframes appdisp {
   from {
     visibility: visible;
@@ -247,6 +246,7 @@ html {
     z-index: -1;
   }
 }
+//animation pour bloquer total scroll durant loader
 @-webkit-keyframes noscroll {
   from {
     overflow-y: hidden;
@@ -378,18 +378,6 @@ html {
   right: 0;
   bottom: 0;
 }
-// @keyframes REMPLISSAGE {
-//   0% {
-//     .heart-complete {
-//       fill: none;
-//     }
-//   }
-//   100% {
-//     .heart-complete {
-//       fill: red;
-//     }
-//   }
-// }
 
 // footerpage GENERAL
 
@@ -417,7 +405,6 @@ footer {
   padding: $generalPad;
   margin: 0;
   font-weight: 500;
-  // z-index: -2;
 }
 
 //Adaptation ecran
@@ -449,7 +436,7 @@ footer {
   }
 }
 
-//Animation
+//Animation opacité
 
 @keyframes fadein {
   0% {
