@@ -380,6 +380,14 @@ footer p {
   padding: 5px 0 5px 0;
   margin: 0;
 }
+footer a {
+  padding: 5px 0 5px 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
 
 @media only screen and (min-width: 768px) {
   .card-resto {
